@@ -1,0 +1,323 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Jul 30, 2022 at 10:29:20 CST
+ncverilog
+	tb.sv
+	JAM_syn.v
+	-v
+	tsmc13.v
+	+define+P1
+	+define+SDF
+	+access+r
+file: tb.sv
+	module worklib.testfixture:sv
+		errors: 0, warnings: 0
+file: JAM_syn.v
+	module worklib.JAM_DW01_add_0:v
+		errors: 0, warnings: 0
+	module worklib.JAM:v
+		errors: 0, warnings: 0
+file: tsmc13.v
+	module tsmc13.BUFX12:v
+		errors: 0, warnings: 0
+	module tsmc13.INVXL:v
+		errors: 0, warnings: 0
+	module tsmc13.INVX1:v
+		errors: 0, warnings: 0
+	module tsmc13.INVX3:v
+		errors: 0, warnings: 0
+	module tsmc13.INVX4:v
+		errors: 0, warnings: 0
+	module tsmc13.INVX12:v
+		errors: 0, warnings: 0
+	module tsmc13.INVX16:v
+		errors: 0, warnings: 0
+	module tsmc13.AND2XL:v
+		errors: 0, warnings: 0
+	module tsmc13.AND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13.AND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13.AOI21X1:v
+		errors: 0, warnings: 0
+	module tsmc13.AOI211XL:v
+		errors: 0, warnings: 0
+	module tsmc13.AOI211X1:v
+		errors: 0, warnings: 0
+	module tsmc13.AOI22XL:v
+		errors: 0, warnings: 0
+	module tsmc13.AOI22X1:v
+		errors: 0, warnings: 0
+	module tsmc13.AOI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13.AOI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13.AOI32XL:v
+		errors: 0, warnings: 0
+	module tsmc13.AOI32X1:v
+		errors: 0, warnings: 0
+	module tsmc13.AOI2BB1X1:v
+		errors: 0, warnings: 0
+	module tsmc13.AOI2BB2XL:v
+		errors: 0, warnings: 0
+	module tsmc13.AOI2BB2X1:v
+		errors: 0, warnings: 0
+	module tsmc13.AO21XL:v
+		errors: 0, warnings: 0
+	module tsmc13.AO21X1:v
+		errors: 0, warnings: 0
+	module tsmc13.AO22X1:v
+		errors: 0, warnings: 0
+	module tsmc13.NAND2XL:v
+		errors: 0, warnings: 0
+	module tsmc13.NAND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13.NAND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13.NAND3X1:v
+		errors: 0, warnings: 0
+	module tsmc13.NAND4X1:v
+		errors: 0, warnings: 0
+	module tsmc13.NAND2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13.NAND3BXL:v
+		errors: 0, warnings: 0
+	module tsmc13.NAND4BXL:v
+		errors: 0, warnings: 0
+	module tsmc13.NAND4BX1:v
+		errors: 0, warnings: 0
+	module tsmc13.NOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13.NOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13.NOR2X2:v
+		errors: 0, warnings: 0
+	module tsmc13.NOR3X1:v
+		errors: 0, warnings: 0
+	module tsmc13.NOR3X2:v
+		errors: 0, warnings: 0
+	module tsmc13.NOR4X1:v
+		errors: 0, warnings: 0
+	module tsmc13.NOR2BXL:v
+		errors: 0, warnings: 0
+	module tsmc13.NOR2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13.NOR3BXL:v
+		errors: 0, warnings: 0
+	module tsmc13.OR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13.OR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13.OAI21XL:v
+		errors: 0, warnings: 0
+	module tsmc13.OAI21X1:v
+		errors: 0, warnings: 0
+	module tsmc13.OAI211X1:v
+		errors: 0, warnings: 0
+	module tsmc13.OAI22XL:v
+		errors: 0, warnings: 0
+	module tsmc13.OAI22X1:v
+		errors: 0, warnings: 0
+	module tsmc13.OAI22X2:v
+		errors: 0, warnings: 0
+	module tsmc13.OAI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13.OAI221X1:v
+		errors: 0, warnings: 0
+	module tsmc13.OAI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13.OAI31XL:v
+		errors: 0, warnings: 0
+	module tsmc13.OAI32XL:v
+		errors: 0, warnings: 0
+	module tsmc13.OAI32X1:v
+		errors: 0, warnings: 0
+	module tsmc13.OAI2BB1X1:v
+		errors: 0, warnings: 0
+	module tsmc13.OAI2BB2XL:v
+		errors: 0, warnings: 0
+	module tsmc13.OA21XL:v
+		errors: 0, warnings: 0
+	module tsmc13.OA22X1:v
+		errors: 0, warnings: 0
+	module tsmc13.XOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13.CLKBUFX3:v
+		errors: 0, warnings: 0
+	module tsmc13.CLKINVX1:v
+		errors: 0, warnings: 0
+	module tsmc13.ADDFXL:v
+		errors: 0, warnings: 0
+	module tsmc13.DFFNSRX1:v
+		errors: 0, warnings: 0
+	module tsmc13.DFFNSRX2:v
+		errors: 0, warnings: 0
+	module tsmc13.DFFNSRX4:v
+		errors: 0, warnings: 0
+	primitive tsmc13.udp_dff:v
+		errors: 0, warnings: 0
+		Caching library 'tsmc13' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+  JAM_DW01_add_0 add_174 ( .A(CurCost), .B({1'b0, 1'b0, 1'b0, Cost}), .CI(1'b0), .SUM({N372, N371, N370, N369, N368, N367, N366, N365, N364, N363}) );
+                       |
+ncelab: *W,CUVWSP (./JAM_syn.v,102|23): 1 output port was not connected:
+ncelab: (./JAM_syn.v,8): CO
+
+  DFFNSRX1 \curmin_reg[0]  ( .D(n462), .CKN(CLK), .SN(n582), .RN(1'b1), .QN(
+                         |
+ncelab: *W,CUVWSP (./JAM_syn.v,103|25): 1 output port was not connected:
+ncelab: (./tsmc13.v,19089): Q
+
+  DFFNSRX1 \curmin_reg[1]  ( .D(n463), .CKN(CLK), .SN(n582), .RN(1'b1), .QN(
+                         |
+ncelab: *W,CUVWSP (./JAM_syn.v,105|25): 1 output port was not connected:
+ncelab: (./tsmc13.v,19089): Q
+
+  DFFNSRX1 \curmin_reg[2]  ( .D(n461), .CKN(CLK), .SN(n581), .RN(1'b1), .QN(
+                         |
+ncelab: *W,CUVWSP (./JAM_syn.v,107|25): 1 output port was not connected:
+ncelab: (./tsmc13.v,19089): Q
+
+  DFFNSRX1 \g_cs_reg[1]  ( .D(g_ns[1]), .CKN(CLK), .SN(1'b1), .RN(n581), .QN(
+                       |
+ncelab: *W,CUVWSP (./JAM_syn.v,186|23): 1 output port was not connected:
+ncelab: (./tsmc13.v,19089): Q
+
+  DFFNSRX1 \MinCost_reg[6]  ( .D(n471), .CKN(CLK), .SN(n582), .RN(1'b1), .QN(
+                          |
+ncelab: *W,CUVWSP (./JAM_syn.v,194|26): 1 output port was not connected:
+ncelab: (./tsmc13.v,19089): Q
+
+  DFFNSRX1 \MinCost_reg[7]  ( .D(n470), .CKN(CLK), .SN(n582), .RN(1'b1), .QN(
+                          |
+ncelab: *W,CUVWSP (./JAM_syn.v,196|26): 1 output port was not connected:
+ncelab: (./tsmc13.v,19089): Q
+
+  DFFNSRX1 \MinCost_reg[9]  ( .D(n468), .CKN(CLK), .SN(n581), .RN(1'b1), .QN(
+                          |
+ncelab: *W,CUVWSP (./JAM_syn.v,198|26): 1 output port was not connected:
+ncelab: (./tsmc13.v,19089): Q
+
+  DFFNSRX1 \MatchCount_reg[1]  ( .D(n465), .CKN(CLK), .SN(1'b1), .RN(n583), 
+                             |
+ncelab: *W,CUVWSP (./JAM_syn.v,200|29): 1 output port was not connected:
+ncelab: (./tsmc13.v,19089): Q
+
+  DFFNSRX1 \MatchCount_reg[2]  ( .D(n467), .CKN(CLK), .SN(1'b1), .RN(n583), 
+                             |
+ncelab: *W,CUVWSP (./JAM_syn.v,202|29): 1 output port was not connected:
+ncelab: (./tsmc13.v,19089): Q
+
+  DFFNSRX1 \MatchCount_reg[3]  ( .D(n464), .CKN(CLK), .SN(1'b1), .RN(n685), 
+                             |
+ncelab: *W,CUVWSP (./JAM_syn.v,214|29): 1 output port was not connected:
+ncelab: (./tsmc13.v,19089): Q
+
+  DFFNSRX1 \MinCost_reg[2]  ( .D(n475), .CKN(CLK), .SN(n685), .RN(1'b1), .QN(
+                          |
+ncelab: *W,CUVWSP (./JAM_syn.v,216|26): 1 output port was not connected:
+ncelab: (./tsmc13.v,19089): Q
+
+  DFFNSRX1 \MatchCount_reg[0]  ( .D(n466), .CKN(CLK), .SN(n685), .RN(1'b1), 
+                             |
+ncelab: *W,CUVWSP (./JAM_syn.v,220|29): 1 output port was not connected:
+ncelab: (./tsmc13.v,19089): Q
+
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Reading SDF file from location "./JAM_syn.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     JAM_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_JAM
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 1923  Annotated = 100.00% -- No. of Tchecks = 660  Annotated = 70.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        1923	        1923	      100.00
+		       $hold	         132	           0	        0.00
+		      $width	         264	         264	      100.00
+		  $setuphold	         264	         198	       75.00
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		tsmc13.ADDFXL:v <0x4894386c>
+			streams:   0, words:     0
+		tsmc13.DFFNSRX1:v <0x3165decd>
+			streams:   0, words:     0
+		tsmc13.DFFNSRX1:v <0x5e31ca1c>
+			streams:   0, words:     0
+		tsmc13.DFFNSRX2:v <0x3200306a>
+			streams:   0, words:     0
+		tsmc13.DFFNSRX2:v <0x5d5424bb>
+			streams:   0, words:     0
+		tsmc13.DFFNSRX4:v <0x6cb3e32a>
+			streams:   0, words:     0
+		tsmc13.XOR2X1:v <0x5cc1a9f5>
+			streams:   0, words:     0
+		worklib.JAM:v <0x218946d0>
+			streams:   0, words:     0
+		worklib.testfixture:sv <0x32e43934>
+			streams:  12, words: 26204
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                  542      71
+		UDPs:                      66       1
+		Primitives:              1359       7
+		Timing outputs:           611      19
+		Registers:                 92      30
+		Scalar wires:             749       -
+		Expanded wires:             7       1
+		Vectored wires:             1       -
+		Always blocks:              3       3
+		Initial blocks:             8       8
+		Cont. assignments:          1       1
+		Pseudo assignments:         1       1
+		Timing checks:            924      84
+		Interconnect:            1645       -
+		Delayed tcheck signals:   140       1
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'JAM.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+*******************************
+** Simulation Start          **
+*******************************
+PATTERN:   1
+-------------- Cost Table --------------
+Jobs       0   1   2   3   4   5   6   7
+worker0:  11  25  53  41  59  32  25  59
+worker1:   4  11  25  11  59  31  53  11
+worker2:  11  59  15  11  15  15  53  53
+worker3:   4  59  32  34  53  41  34  59
+worker4:  15  32  41  34   4  59  34  32
+worker5:  41  59  59   4   4  41  34  34
+worker6:  53  31  25  41  59  32  31  53
+worker7:  11  31  25  11  34  34  53  32
+----------------------------------------------------------------------
+Get Valid at cycle:    512796
+receive MinCost/MatchCount=  119/ 3 , golden MinCost/MatchCount= 119/ 3
+----------------------------------------------------------------------
+*************************
+**  FUNCTION  CORRECT  **
+*************************
+
+Simulation complete via $finish(1) at time 5127955 NS + 0
+./tb.sv:180                 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Jul 30, 2022 at 10:30:06 CST  (total: 00:00:46)

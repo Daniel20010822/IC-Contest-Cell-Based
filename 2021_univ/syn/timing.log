@@ -1,0 +1,162 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : geofence
+Version: P-2019.03
+Date   : Sat May 21 21:57:30 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: finite_state_machine/global_cs_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: xyregister_2w2r/X5_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  geofence           tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  finite_state_machine/global_cs_reg[0]/CK (DFFRX1)       0.00       0.50 r
+  finite_state_machine/global_cs_reg[0]/QN (DFFRX1)       0.51       1.01 r
+  finite_state_machine/U11/Y (NAND2BX2)                   0.56       1.57 r
+  finite_state_machine/U10/Y (INVX3)                      0.30       1.87 f
+  finite_state_machine/bubbleSort (fsm)                   0.00       1.87 f
+  U1/Y (CLKBUFX2)                                         0.64       2.51 f
+  cross_product/bubbleSort (crss)                         0.00       2.51 f
+  cross_product/U113/Y (CLKBUFX3)                         0.95       3.46 f
+  cross_product/U29/Y (NOR2BX2)                           0.36       3.82 r
+  cross_product/U115/Y (CLKBUFX3)                         0.72       4.54 r
+  cross_product/U14/Y (NOR2X1)                            0.24       4.79 f
+  cross_product/U111/Y (CLKBUFX3)                         0.27       5.06 f
+  cross_product/U110/Y (CLKBUFX3)                         0.60       5.66 f
+  cross_product/U16/Y (CLKBUFX3)                          0.88       6.54 f
+  cross_product/U33/Y (NOR2X4)                            0.28       6.82 r
+  cross_product/sub_35/A[0] (crss_DW01_sub_1)             0.00       6.82 r
+  cross_product/sub_35/U7/Y (CLKINVX1)                    0.18       7.00 f
+  cross_product/sub_35/U6/Y (NAND2X2)                     0.14       7.14 r
+  cross_product/sub_35/U2_1/S (ADDFHX2)                   0.35       7.49 f
+  cross_product/sub_35/DIFF[1] (crss_DW01_sub_1)          0.00       7.49 f
+  cross_product/mul0/b[1] (mult_signed_1)                 0.00       7.49 f
+  cross_product/mul0/U130/Y (CLKINVX1)                    0.15       7.64 r
+  cross_product/mul0/add_0_root_add_64_ni/A[1] (mult_signed_1_DW01_inc_1)
+                                                          0.00       7.64 r
+  cross_product/mul0/add_0_root_add_64_ni/U1_1_1/CO (ADDHX1)
+                                                          0.26       7.90 r
+  cross_product/mul0/add_0_root_add_64_ni/U1_1_2/CO (ADDHX1)
+                                                          0.27       8.17 r
+  cross_product/mul0/add_0_root_add_64_ni/U1_1_3/CO (ADDHX1)
+                                                          0.27       8.45 r
+  cross_product/mul0/add_0_root_add_64_ni/U1_1_4/CO (ADDHX1)
+                                                          0.26       8.71 r
+  cross_product/mul0/add_0_root_add_64_ni/U1_1_5/CO (ADDHXL)
+                                                          0.36       9.07 r
+  cross_product/mul0/add_0_root_add_64_ni/U1_1_6/CO (ADDHX1)
+                                                          0.28       9.35 r
+  cross_product/mul0/add_0_root_add_64_ni/U1_1_7/CO (ADDHXL)
+                                                          0.41       9.76 r
+  cross_product/mul0/add_0_root_add_64_ni/U1_1_8/CO (ADDHX2)
+                                                          0.23       9.99 r
+  cross_product/mul0/add_0_root_add_64_ni/U1_1_9/CO (ADDHXL)
+                                                          0.34      10.33 r
+  cross_product/mul0/add_0_root_add_64_ni/U2/Y (XOR2X2)
+                                                          0.26      10.59 f
+  cross_product/mul0/add_0_root_add_64_ni/SUM[10] (mult_signed_1_DW01_inc_1)
+                                                          0.00      10.59 f
+  cross_product/mul0/U120/Y (AOI22X2)                     0.40      10.99 r
+  cross_product/mul0/U24/Y (INVX4)                        0.19      11.18 f
+  cross_product/mul0/U33/Y (NOR2XL)                       0.49      11.67 r
+  cross_product/mul0/U25/Y (BUFX8)                        0.38      12.05 r
+  cross_product/mul0/U125/Y (AOI221XL)                    0.28      12.33 f
+  cross_product/mul0/U124/Y (CLKBUFX3)                    0.61      12.94 f
+  cross_product/mul0/U42/Y (NOR2XL)                       0.78      13.73 r
+  cross_product/mul0/U298/Y (AND2X1)                      0.30      14.03 r
+  cross_product/mul0/U138/CO (ADDFXL)                     0.47      14.50 r
+  cross_product/mul0/U132/S (ADDFXL)                      0.62      15.12 r
+  cross_product/mul0/add_1_root_add_0_root_add_86_10/B[5] (mult_signed_1_DW01_add_1)
+                                                          0.00      15.12 r
+  cross_product/mul0/add_1_root_add_0_root_add_86_10/U1_5/CO (ADDFXL)
+                                                          0.86      15.98 r
+  cross_product/mul0/add_1_root_add_0_root_add_86_10/U1_6/CO (ADDFXL)
+                                                          0.50      16.47 r
+  cross_product/mul0/add_1_root_add_0_root_add_86_10/U1_7/CO (ADDFXL)
+                                                          0.50      16.97 r
+  cross_product/mul0/add_1_root_add_0_root_add_86_10/U1_8/S (ADDFXL)
+                                                          0.61      17.58 r
+  cross_product/mul0/add_1_root_add_0_root_add_86_10/SUM[8] (mult_signed_1_DW01_add_1)
+                                                          0.00      17.58 r
+  cross_product/mul0/add_0_root_add_0_root_add_86_10/A[8] (mult_signed_1_DW01_add_0)
+                                                          0.00      17.58 r
+  cross_product/mul0/add_0_root_add_0_root_add_86_10/U1_8/CO (ADDFXL)
+                                                          0.80      18.38 r
+  cross_product/mul0/add_0_root_add_0_root_add_86_10/U1_9/S (ADDFXL)
+                                                          0.62      19.00 r
+  cross_product/mul0/add_0_root_add_0_root_add_86_10/SUM[9] (mult_signed_1_DW01_add_0)
+                                                          0.00      19.00 r
+  cross_product/mul0/out[9] (mult_signed_1)               0.00      19.00 r
+  cross_product/sub_39/A[9] (crss_DW01_sub_0)             0.00      19.00 r
+  cross_product/sub_39/U57/Y (CLKINVX1)                   0.34      19.35 f
+  cross_product/sub_39/U4/Y (AND2X8)                      0.23      19.58 f
+  cross_product/sub_39/U3/Y (OAI22X4)                     0.19      19.76 r
+  cross_product/sub_39/U2/Y (NOR2X1)                      0.14      19.91 f
+  cross_product/sub_39/U1/Y (AOI2BB2X1)                   0.39      20.30 f
+  cross_product/sub_39/U10/Y (AND2X2)                     0.27      20.57 f
+  cross_product/sub_39/U9/Y (OR2X4)                       0.20      20.76 f
+  cross_product/sub_39/U7/Y (NAND2X4)                     0.10      20.86 r
+  cross_product/sub_39/U38/Y (NOR2X1)                     0.10      20.96 f
+  cross_product/sub_39/U37/Y (AOI2BB2X1)                  0.39      21.36 f
+  cross_product/sub_39/U36/Y (AND2X2)                     0.27      21.63 f
+  cross_product/sub_39/U41/Y (OAI22X1)                    0.56      22.19 r
+  cross_product/sub_39/U49/Y (NOR2XL)                     0.39      22.58 f
+  cross_product/sub_39/U39/Y (AOI2BB2X1)                  0.37      22.95 f
+  cross_product/sub_39/U12/Y (OR2X1)                      0.39      23.34 f
+  cross_product/sub_39/U11/Y (NAND2X4)                    0.12      23.46 r
+  cross_product/sub_39/U42/Y (NOR2X1)                     0.10      23.56 f
+  cross_product/sub_39/U33/Y (AOI2BB2XL)                  0.45      24.01 f
+  cross_product/sub_39/U34/Y (OR2XL)                      0.46      24.47 f
+  cross_product/sub_39/U18/Y (NAND2X4)                    0.14      24.61 r
+  cross_product/sub_39/U48/Y (NOR2X1)                     0.11      24.72 f
+  cross_product/sub_39/U29/Y (AOI2BB2XL)                  0.45      25.17 f
+  cross_product/sub_39/U16/Y (AND2X2)                     0.30      25.47 f
+  cross_product/sub_39/U15/Y (OR2X2)                      0.26      25.72 f
+  cross_product/sub_39/U14/Y (NAND2X2)                    0.14      25.87 r
+  cross_product/sub_39/U27/Y (NOR2X1)                     0.12      25.99 f
+  cross_product/sub_39/U26/Y (OAI2BB2XL)                  0.47      26.46 r
+  cross_product/sub_39/U23/Y (XNOR3X2)                    0.38      26.84 f
+  cross_product/sub_39/DIFF[21] (crss_DW01_sub_0)         0.00      26.84 f
+  cross_product/U15/Y (NAND2X1)                           0.18      27.02 r
+  cross_product/U36/Y (CLKINVX1)                          0.46      27.48 f
+  cross_product/U24/Y (BUFX2)                             0.62      28.10 f
+  cross_product/U32/Y (NOR2XL)                            0.47      28.56 r
+  cross_product/U13/Y (OR2X1)                             0.67      29.24 r
+  cross_product/swapX1[1] (crss)                          0.00      29.24 r
+  xyregister_2w2r/swapX1[1] (xyreg_2w2r)                  0.00      29.24 r
+  xyregister_2w2r/U4/Y (CLKINVX1)                         0.25      29.49 f
+  xyregister_2w2r/U292/Y (OAI221XL)                       0.51      30.00 r
+  xyregister_2w2r/X5_reg[1]/D (DFFRX1)                    0.00      30.00 r
+  data arrival time                                                 30.00
+
+  clock clk (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             0.50      30.50
+  clock uncertainty                                      -0.10      30.40
+  xyregister_2w2r/X5_reg[1]/CK (DFFRX1)                   0.00      30.40 r
+  library setup time                                     -0.30      30.10
+  data required time                                                30.10
+  --------------------------------------------------------------------------
+  data required time                                                30.10
+  data arrival time                                                -30.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.10
+
+
+1
