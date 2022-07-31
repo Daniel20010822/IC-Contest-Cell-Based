@@ -1,0 +1,3 @@
+Min cost at job serial : (in order from W0 to W7)
+(6, 0, 3, 5, 1, 2, 7, 4)
+(6, 7, 1, 5, 0, 2, 3, 4)
