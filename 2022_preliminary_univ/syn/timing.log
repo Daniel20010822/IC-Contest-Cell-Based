@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : JAM
 Version: P-2019.03
-Date   : Sat Jul 30 10:05:40 2022
+Date   : Mon Aug  1 20:39:05 2022
 ****************************************
 
 Operating Conditions: slow   Library: slow
@@ -14,7 +14,7 @@ Wire Load Model Mode: top
 
   Startpoint: CurCost_reg[0]
               (falling edge-triggered flip-flop clocked by CLK)
-  Endpoint: MatchCount_reg[3]
+  Endpoint: MatchCount_reg[1]
             (falling edge-triggered flip-flop clocked by CLK)
   Path Group: CLK
   Path Type: max
@@ -29,40 +29,35 @@ Wire Load Model Mode: top
   clock network delay (ideal)              0.50       5.50
   CurCost_reg[0]/CKN (DFFNSRX1)            0.00       5.50 f
   CurCost_reg[0]/Q (DFFNSRX1)              0.86       6.36 r
-  U471/Y (NOR2BXL)                         0.38       6.75 f
-  U481/Y (AO21XL)                          0.44       7.18 f
-  U876/Y (OAI211X1)                        0.20       7.38 r
-  U877/Y (OAI221XL)                        0.30       7.68 f
-  U463/Y (AND2X2)                          0.32       8.00 f
-  U460/Y (NOR3X1)                          0.30       8.30 r
-  U879/Y (OAI222XL)                        0.34       8.64 f
-  U496/Y (AOI32XL)                         0.59       9.23 r
-  U495/Y (NOR2X1)                          0.21       9.44 f
-  U459/Y (OR2X1)                           0.50       9.94 f
-  U497/Y (NAND3BXL)                        0.45      10.39 f
-  U880/Y (NOR4X1)                          0.51      10.90 r
-  U518/Y (CLKINVX1)                        0.34      11.24 f
-  U467/Y (NOR2X1)                          0.69      11.93 r
-  U501/Y (CLKINVX1)                        0.37      12.30 f
-  U410/Y (OR2X1)                           0.38      12.68 f
-  U465/Y (NAND3X1)                         0.28      12.96 r
-  U593/Y (AOI21X1)                         0.23      13.19 f
-  U596/Y (OA21XL)                          0.34      13.54 f
-  U594/Y (OAI21XL)                         0.44      13.98 r
-  MatchCount_reg[3]/D (DFFNSRX1)           0.00      13.98 r
-  data arrival time                                  13.98
+  U563/Y (NOR2BXL)                         0.38       6.75 f
+  U560/Y (AO21XL)                          0.44       7.18 f
+  U1005/Y (OAI211X1)                       0.20       7.38 r
+  U1006/Y (OAI221XL)                       0.30       7.68 f
+  U1007/Y (AOI222XL)                       0.73       8.41 r
+  U1009/Y (OAI222XL)                       0.40       8.81 f
+  U554/Y (AOI32XL)                         0.60       9.41 r
+  U532/Y (OAI22X1)                         0.43       9.84 f
+  U559/Y (NAND3BXL)                        0.47      10.31 f
+  U625/Y (OR4X1)                           0.67      10.98 f
+  U624/Y (NOR2X1)                          0.55      11.53 r
+  U590/Y (CLKINVX1)                        0.42      11.95 f
+  U722/Y (NOR3X1)                          0.53      12.48 r
+  U626/Y (CLKINVX1)                        0.35      12.83 f
+  U723/Y (OAI22XL)                         0.52      13.35 r
+  MatchCount_reg[1]/D (DFFNSRX1)           0.00      13.35 r
+  data arrival time                                  13.35
 
   clock CLK (fall edge)                   15.00      15.00
   clock network delay (ideal)              0.50      15.50
   clock uncertainty                       -0.10      15.40
-  MatchCount_reg[3]/CKN (DFFNSRX1)         0.00      15.40 f
+  MatchCount_reg[1]/CKN (DFFNSRX1)         0.00      15.40 f
   library setup time                      -0.05      15.35
   data required time                                 15.35
   -----------------------------------------------------------
   data required time                                 15.35
-  data arrival time                                 -13.98
+  data arrival time                                 -13.35
   -----------------------------------------------------------
-  slack (MET)                                         1.38
+  slack (MET)                                         2.00
 
 
 1
