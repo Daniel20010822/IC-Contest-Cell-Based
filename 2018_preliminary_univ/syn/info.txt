@@ -1,0 +1,1 @@
+Success when CYCLE >= 15.0 (testfixture.v line2)
