@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : LCD_CTRL
+Version: P-2019.03
+Date   : Sun Aug 14 13:52:13 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /mnt3/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                          135
+Number of nets:                          6788
+Number of cells:                         6158
+Number of combinational cells:           5616
+Number of sequential cells:               532
+Number of macros/black boxes:               0
+Number of buf/inv:                        906
+Number of references:                     143
+
+Combinational area:              55102.695741
+Buf/Inv area:                     6753.954522
+Noncombinational area:           17153.923843
+Macro/Black Box area:                0.000000
+Net Interconnect area:          988778.274567
+
+Total cell area:                 72256.619585
+Total area:                    1061034.894151
+1
